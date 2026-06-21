@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&y6d8b5gt4ex#@#gpw==svqmr15l_5=a7jzh^0mvcz0l#a693t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -158,4 +158,12 @@ EMAIL_HOST_USER = 'dysonkulemera89@gmail.com'
 EMAIL_HOST_PASSWORD = 'iphhwkqfafavxkom'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+ALLOWED_HOSTS = [
+    "waste-management-system-production-600c.up.railway.app",
+    "localhost",
+    "127.0.0.1",
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://waste-management-system-production-600c.up.railway.app",
+]
